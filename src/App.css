@@ -1,9 +1,18 @@
 .dark{
-  background-color: black;
-  color: white;
+  background-color: rgb(22, 22, 27);
+  color: rgb(255, 249, 249);
+  transition: 0.2s ease-in-out;
 }
 
 .light{
   background-color: white;
-  color: black;
+  color: rgb(0, 0, 0);
+  transition: 0.2s ease-in-out;
+}
+
+@media all and (max-width:540px){
+  .botonDark{
+    margin-top: 20px;
+    width: 50px;
+  }
 }

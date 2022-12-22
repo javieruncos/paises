@@ -14,7 +14,13 @@
 }
 
 .inputSearch{
-    border: transparent;
+    border: 0;
+}
+
+
+.inputSearch:focus{
+    outline-style: none;
+    box-shadow: none;
 }
 
 .selectSearch{

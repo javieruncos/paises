@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Card} from "react-bootstrap";
 
-const CardPaises = ({ pais }) => {
+const CardPaises = ({ pais ,darkmode,setDarkmode}) => {
   return (
     <>
       <Col md={4}>
@@ -10,7 +10,7 @@ const CardPaises = ({ pais }) => {
             <div className="imgContenedor">
               <img src={pais.flags.png} alt="bandera" className="w-100"/>
             </div>
-            <Card.Body className="cardBody">
+            <Card.Body className= {darkmode ? "dark" : "light" }>
               <h6>{pais.name}</h6>
               <Card.Text>
               population: {pais.population} <br />
