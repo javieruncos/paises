@@ -1,7 +1,8 @@
 import React from "react";
 import { Navbar,Container,Nav} from "react-bootstrap"; 
 
-const Menu = () => {
+
+const Menu = ({darkmode,setDarkmode}) => {
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -10,7 +11,9 @@ const Menu = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-             <button className="btn btn-outline-dark"><i class="bi bi-brightness-high"></i></button>
+              <span><i class="bi bi-brightness-high"></i></span>
+              <input type="checkbox" onChange={()=>setDarkmode(!darkmode)}/>
+              <span><i class="bi bi-brightness-high"></i></span>
             </Nav>
           </Navbar.Collapse>
         </Container>

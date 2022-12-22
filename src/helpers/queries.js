@@ -1,6 +1,7 @@
 const url = "https://restcountries.com/v2/all"
 
 
+
 export const listarPaises =async()=>{
   try {
     const respuesta = await fetch(url)
@@ -11,3 +12,6 @@ export const listarPaises =async()=>{
     return false
   }
 }
+
+
+
